@@ -1,0 +1,124 @@
+@charset "utf-8";
+@import url(./fontStyle.css);
+
+@font-face {
+  font-family: 'Pretendard-Regular', 'Times New Roman','SUITE-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* reset  */
+* { margin: 0; padding: 0;}
+li { list-style: none;}
+a { text-decoration: none; color: inherit;}
+img { display: block;}
+body { font-family: 'Pretendard-Regular';}
+
+/* 전체 프레임 */
+div#wrap {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #d7f8fa;}
+div#wrap ul#gnb { position: fixed; top: 0; left: 36%; }
+div#wrap ul#gnb li { float: left; padding: 30px;}
+div#wrap ul#gnb li a { font-size: 20px; color: #000000;}
+div#wrap ul#gnb li:hover a { font-size: 26px; color: #020202; }
+
+
+
+div#wrap figure { position: absolute; top: 20%; right: 0; width: 100%; height: 500px; 
+ transition: 1s;}
+div#wrap figure ol .page1 { background: url(../img/tiffany_main.png) no-repeat center/contain; position: absolute; top: 0; right: 0; width: 100%; height: 500px; 
+  transition: 1s;}
+div#wrap figure ol .page2 { background: url(../img/tiffany_sub.png) no-repeat center/contain; position: absolute; top: 0; right: 0; width: 100%; height: 500px; 
+  transition: 1s;}
+div#wrap figure p a { border: 2px solid #111; padding: 10px; border-radius: 3px; position: fixed; bottom: 5%; left: 46%;}
+div#wrap figure a:hover { color: #fff7df; background-color: #000000; transition: .5s;}
+div#wrap figure ul li a { display: none;}
+
+div#wrap section .ex {position: fixed; bottom: 130px; right:130px; padding: 20px; font-size: 12px; color:#2635b8;}
+div#wrap section .ex li { padding: 5px;}
+div#wrap section .ex1 { display: none;}
+div#wrap section .ex2 { display: none;}
+div#wrap figure .up img { display: none;}
+
+
+/* 메뉴 */
+div#wrap nav { position: fixed; top: 35%; left: -2%; width: 100%; }
+div#wrap nav li {width: 25%; padding: 10px;}
+div#wrap nav li p { position: absolute; top: 0; left: 100px;}
+div#wrap nav li a { display: block; width: 5%; height: 20px; background-color: #000000; color: #000000; margin: 0 auto;
+transition: .5s; font-size: 14px; opacity: .6; z-index: 1; position: relative; border-radius: 50%; }
+div#wrap nav li:hover a { background-color: #ffffff; color: #ffffff; opacity: .9;}
+div#wrap nav li a.on {background-color: #fd3131; color: #fd3131; opacity: .9; }
+
+
+/* Renewal */
+/* div#wrap.Renewal {background-color: #fff7df;}
+div#wrap.Renewal ul#gnb a {color:#000000;}
+div#wrap.Renewal ul#sns i{color: #000000;}
+div#wrap.Renewal figure {background: url(../img/tiffany_sub.png)no-repeat center/contain; position: fixed; top: 20%; left: 0; }
+div#wrap.Renewal figure p a { border: 2px solid #111; padding: 10px; border-radius: 3px; position: fixed; bottom: 7%; left: 46%;}
+div#wrap.Renewal figure a:hover { color: #fff7df; background-color: #000000; transition: .5s;}
+div#wrap.Renewal figure ul li a { display: none;}
+
+
+div#wrap.Renewal section .ex {position: fixed; bottom: 130px; right:130px; padding: 20px; font-size: 12px; color:#3c3ac2;}
+div#wrap.Renewal section .ex li { padding: 5px;}
+div#wrap.Renewal section .ex1 { display: none;}
+div#wrap.Renewal section .ex2 { display: none;}
+div#wrap.Renewal figure .main { display: none;}
+div#wrap.Renewal figure .sub { display: block;} */
+
+/* Details page */
+div#wrap.Details_page {background-color: #3a3cc2;}
+div#wrap.Details_page ul#gnb a {color: #ffffff;}
+div#wrap.Details_page ul#sns i{color: #ffffff;}
+
+div#wrap.Details_page figure .up { width: 500px; height: 500px; overflow:auto; position: fixed; left: 35%; }
+div#wrap.Details_page figure .up img {display: block; width: 100%;}
+
+
+div#wrap.Details_page figure p {color: #333;}
+div#wrap.Details_page figure ul {display: none;}
+div#wrap.Details_page section .ex1 { display: block; position: fixed; bottom: 130px; right:170px; padding: 20px; font-size: 12px; color:#fcfcfc;}
+div#wrap.Details_page section .ex1 li { padding: 5px;}
+div#wrap.Details_page section .ex { display: none;}
+div#wrap.Details_page section .ex2 { display: none;}
+div#wrap.Details_page figure ol { display: none;}
+div#wrap.Details_page figure p > a { display: none;}
+
+/* CardNews */
+div#wrap.CardNews {background-color: #ffb936;}
+div#wrap.CardNews ul#gnb a {color: #fff;}
+div#wrap.CardNews ul#sns i{color: #fff;}
+div#wrap.CardNews figure a { display: none;}
+div#wrap.CardNews figure ul { display: block;}
+div#wrap.CardNews figure {height: 600px; overflow: hidden; background: url(../img/Insta\ card\ news2.png)no-repeat center/contain;}
+div#wrap.CardNews figure ul .slide01 { background: url(../img/Insta\ card\ news0.png) no-repeat center/contain;}
+div#wrap.CardNews figure ul .slide02 { background: url(../img/Insta\ card\ news1.png) no-repeat center/contain;}
+div#wrap.CardNews figure ul .slide03 { background: url(../img/Insta\ card\ news2.png) no-repeat center/contain;}
+div#wrap.CardNews figure ul .slide04 { background: url(../img/Insta\ card\ news3.png) no-repeat center/contain;}
+div#wrap.CardNews figure ul li { width: 100%; height: 600px;}
+
+div#wrap.CardNews figure p {color: #fff;}
+
+div#wrap.CardNews section .ex2 {display: block; position: fixed; bottom: 130px; right:270px; padding: 20px; font-size: 12px; color:#fcfcfc;}
+div#wrap.CardNews section .ex2 li { padding: 5px;}
+div#wrap.CardNews section .ex { display: none;}
+div#wrap.CardNews section .ex1 { display: none;}
+div#wrap.CardNews figure ol { display: none;}
+
+/* byredo */
+div#wrap.byredo { background-color: #fff; }
+
+div#wrap.byredo ul#gnb a {color: #000000;}
+div#wrap.byredo ul#sns i{color: #000000;}
+div#wrap.byredo figure {background: url();}
+div#wrap.byredo figure a { display: none;}
+div#wrap.byredo figure p {color: #fff;}
+
+div#wrap.byredo section .ex { display: none;}
+div#wrap.byredo section .ex1 { display: none;}
+div#wrap.byredo section .ex2 { display: none;}
+div#wrap.byredo figure ul { display: none;}
+div#wrap.byredo figure p { display: none;}
+div#wrap.byredo figure ol { display: none;}
